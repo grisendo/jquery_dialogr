@@ -15,7 +15,7 @@
 <script type="text/javascript">
 
 $(function() {
-	$("#dialog1").dialogr({ autoOpen: false, minHeight: 140, minWidth: 310, height: 160, width: 330 });
+	$("#dialog1").dialogr({ position: [0, 0], autoOpen: false, minHeight: 140, minWidth: 310, height: 500, width: 550 });
 	$("#dialog2").dialogr({ autoOpen: false, minHeight: 140, minWidth: 310, height: 160, width: 330 });
 	$("#dialog3").dialogr({ autoOpen: false, minHeight: 140, minWidth: 310, height: 160, width: 330 });
 	//$("#dialog").dialog({maximized:true,minimized:true});
@@ -205,6 +205,7 @@ span.open.ui-icon {
 <div class="note">
       <p>1) Variables window.minimized and window.maximized should be stored at Dialogr instance, not at window object.</p>
       <p>2) If you minimize the Dialogr and then close it, when you open it again the content height isn't calculated correctly.</p>
+      <p>3) With autoOpen: false the width/height aren't being respected. No problems with autoOpen: true.</p>
   </div>
   <p>Fixed Bugs</p>
   <div class="note">
